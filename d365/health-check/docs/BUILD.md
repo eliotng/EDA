@@ -18,6 +18,9 @@ Flows/Actions
 
 -   Use Power Automate or Solution Designer to create components outlined in ../solution/README.md
 -   Export solution to zip and store artifacts outside of this repo, or keep the unpacked folder under ./solution/src if using solution pack/unpack
+-   Flows:
+    -   Implement per docs/FLOWS.md and capture the HTTP URLs for Flow A and B.
+    -   Configure these URLs in the PCF inputs (EndpointMode=Flow).
 
 CI
 

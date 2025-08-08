@@ -12,6 +12,8 @@ Contents
 - ./pcf/ — PCF control scaffolding guidance and structure
 - ./solution/ — Dataverse solution structure and deployment steps
 - ./schema/ — Dataverse table design and sample seed data
+- ./docs/FLOWS.md — Power Automate flows to replace Apex calls
+
 - ./docs/ — Architecture and testing guides
 
 Quick Overview

@@ -32,7 +32,9 @@ Components
         -   Flow A (GetHealthCheckViewModel): Query tables, compute counts/status, shape payload as JSON
         -   Flow B (UpdateHealthCheckLastRunDate): Update settings.LastRunDate and return new date
     -   Option B: Dataverse custom actions + C# plugin or Azure Function
-        -   Actions new_GetHealthCheckViewModel / new_UpdateHealthCheckLastRunDate
+-   See docs/FLOWS.md for concrete steps and output schemas for Flow A/B.
+
+          -   Actions new_GetHealthCheckViewModel / new_UpdateHealthCheckLastRunDate
 
 Payload Contract (PCF <-> Backend)
 {
