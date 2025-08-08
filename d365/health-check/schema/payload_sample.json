@@ -1,0 +1,27 @@
+{
+    "lastRunDate": "2025-08-08",
+    "healthCheckDefinitionList": [
+        {
+            "label": "Core Data",
+            "status": "Passed",
+            "passedChecks": 2,
+            "totalChecks": 2,
+            "expandedRowsList": [],
+            "healthCheckItemList": [
+                { "name": "No orphan records", "status": "Passed", "details": "" },
+                { "name": "Unique keys enforced", "status": "Passed", "details": "" }
+            ]
+        },
+        {
+            "label": "System",
+            "status": "Failed",
+            "passedChecks": 1,
+            "totalChecks": 2,
+            "expandedRowsList": [],
+            "healthCheckItemList": [
+                { "name": "Required settings configured", "status": "Passed", "details": "" },
+                { "name": "Unsupported feature disabled", "status": "Failed", "details": "Feature X found enabled" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://schemas.microsoft.com/xrm/2011/Contracts/Deployment/Controls" xmlns:pc="http://schemas.microsoft.com/PowerApps/2019/CustomControl/Manifest">
+  <control namespace="org.healthcheck" constructor="HealthCheckPcf" version="1.0.0">
+    <display-name>Health Check</display-name>
+    <description>EDA Health Check for Dynamics 365</description>
+    <type-group name="types">
+      <type>SingleLine.Text</type>
+      <type>Multiple</type>
+    </type-group>
+    <resources>
+      <code path="index.ts" order="1" />
+    </resources>
+    <property name="EndpointMode" of-type="SingleLine.Text" usage="input">
+      <display-name>Endpoint Mode</display-name>
+      <description>Flow or Action</description>
+    </property>
+    <property name="GetViewModelEndpoint" of-type="SingleLine.Text" usage="input">
+      <display-name>Get View Model Endpoint</display-name>
+      <description>Flow HTTP URL or Action name</description>
+    </property>
+    <property name="UpdateLastRunEndpoint" of-type="SingleLine.Text" usage="input">
+      <display-name>Update Last Run Endpoint</display-name>
+      <description>Flow HTTP URL or Action name</description>
+    </property>
+    <property name="ShowSettings" of-type="TwoOptions" usage="input">
+      <display-name>Show Settings Link</display-name>
+      <description>Show Settings navigation link</description>
+    </property>
+    <property name="SettingsNavigationTarget" of-type="SingleLine.Text" usage="input">
+      <display-name>Settings Navigation Target</display-name>
+      <description>Target entity form or URL</description>
+    </property>
+    <property name="TitleText" of-type="SingleLine.Text" usage="input">
+      <display-name>Title Text</display-name>
+      <description>Header Title</description>
+    </property>
+    <property name="DescriptionText" of-type="Multiple" usage="input">
+      <display-name>Description Text</display-name>
+      <description>Description under header</description>
+    </property>
+    <property name="RunButtonText" of-type="SingleLine.Text" usage="input">
+      <display-name>Run Button Text</display-name>
+      <description>Run button label</description>
+    </property>
+    <property name="LastRunTextTemplate" of-type="SingleLine.Text" usage="input">
+      <display-name>Last Run Template</display-name>
+      <description>Template with {0} placeholder</description>
+    </property>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    <supports-hosted-control>false</supports-hosted-control>
+  </control>
+</manifest>

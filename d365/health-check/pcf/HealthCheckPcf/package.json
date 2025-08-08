@@ -1,0 +1,10 @@
+{
+    "name": "health-check-pcf",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "pcf-scripts build",
+        "start": "pcf-scripts start",
+        "test": "echo \"no tests\""
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "settings": {
+        "lastRunDate": "2025-08-01"
+    },
+    "definitions": [
+        {
+            "name": "Data Integrity",
+            "groupName": "Core Data",
+            "description": "Validates core data constraints.",
+            "checkType": "Integrity",
+            "isEnabled": true,
+            "order": 1
+        },
+        {
+            "name": "Configuration",
+            "groupName": "System",
+            "description": "Validates configuration best practices.",
+            "checkType": "Config",
+            "isEnabled": true,
+            "order": 2
+        }
+    ],
+    "groups": [
+        {
+            "name": "Core Data",
+            "status": "Passed",
+            "passedChecks": 2,
+            "totalChecks": 2
+        },
+        {
+            "name": "System",
+            "status": "Failed",
+            "passedChecks": 1,
+            "totalChecks": 2
+        }
+    ],
+    "items": [
+        {
+            "name": "No orphan records",
+            "status": "Passed",
+            "details": "",
+            "group": "Core Data",
+            "definition": "Data Integrity",
+            "sequence": 1
+        },
+        {
+            "name": "Unique keys enforced",
+            "status": "Passed",
+            "details": "",
+            "group": "Core Data",
+            "definition": "Data Integrity",
+            "sequence": 2
+        },
+        {
+            "name": "Required settings configured",
+            "status": "Passed",
+            "details": "",
+            "group": "System",
+            "definition": "Configuration",
+            "sequence": 1
+        },
+        {
+            "name": "Unsupported feature disabled",
+            "status": "Failed",
+            "details": "Feature X found enabled",
+            "group": "System",
+            "definition": "Configuration",
+            "sequence": 2
+        }
+    ]
+}
