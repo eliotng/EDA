@@ -48,7 +48,7 @@ Steps
     -   GetViewModelEndpoint: Flow A URL
     -   UpdateLastRunEndpoint: Flow B URL
     -   ShowSettings: Yes/No as desired
-    -   SettingsNavigationTarget: entityLogicalName[:formId] or URL
+    -   SettingsNavigationTarget: entityLogicalName[:formId] or URL (defaults to new_healthchecksettings if omitted)
     -   TitleText, DescriptionText, RunButtonText, LastRunTextTemplate: optional UI text overrides
 
 6. Test end-to-end

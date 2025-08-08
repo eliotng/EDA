@@ -18,7 +18,7 @@ Inputs (manifest ControlManifest.Inputs)
 - GetViewModelEndpoint (Text) — Flow HTTP URL or Action name
 - UpdateLastRunEndpoint (Text) — Flow HTTP URL or Action name
 - ShowSettings (TwoOptions)
-- SettingsNavigationTarget (Text) — app/page/table to open
+- SettingsNavigationTarget (Text) — app/page/table to open (defaults to new_healthchecksettings if not provided)
 - TitleText, DescriptionText, RunButtonText, LastRunTextTemplate — optional overrides
 
 Outputs

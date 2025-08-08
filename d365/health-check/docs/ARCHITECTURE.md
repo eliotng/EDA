@@ -15,12 +15,12 @@ Components
     -   Events: onLoaded (fetch), onRunHealthCheck (update + refresh)
     -   Rendering: header (icon + Settings), run card (description + button), results (groups/items with pass/fail)
 -   Data: Dataverse
-    -   Tables:
-        -   HealthCheckDefinition (Name, GroupName, Description, IsEnabled, Order, CheckType)
-        -   HealthCheckGroup (Name, Status, PassedChecks, TotalChecks)
-        -   HealthCheckItem (Name, Status, Details, Group (lookup), Definition (lookup), Sequence)
-        -   HealthCheckRun (StartedOn, CompletedOn, Status, SummaryPassed, SummaryTotal)
-        -   HealthCheckSettings (LastRunDate)
+    -   Tables (publisher prefix new\_):
+        -   new_HealthCheckDefinition (new_name, new_groupname, new_description, new_isenabled, new_order, new_checktype)
+        -   new_HealthCheckGroup (new_name, new_status, new_passedchecks, new_totalchecks)
+        -   new_HealthCheckItem (new_name, new_status, new_details, new_group, new_definition, new_sequence)
+        -   new_HealthCheckRun (new_startedon, new_completedon, new_status, new_summarypassed, new_summarytotal)
+        -   new_HealthCheckSettings (new_lastrundate)
     -   Relationships:
         -   Group 1—N Item
         -   Definition 1—N Item

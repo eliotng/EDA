@@ -165,7 +165,7 @@ export class HealthCheckPcf {
     }
 
     private onSettingsClick() {
-        const target = this.props.SettingsNavigationTarget || "";
+        const target = this.props.SettingsNavigationTarget || "new_healthchecksettings";
         const nav = (this.ctx as any)?.navigation || (window as any)?.Xrm?.Navigation;
         if (!nav) return;
         if (target.startsWith("http")) {
