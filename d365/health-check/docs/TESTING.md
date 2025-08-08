@@ -9,6 +9,16 @@ Preconditions
 -   Solution imported with tables, flows or actions, and PCF registered
 -   Sample data imported from ../schema/seed/healthcheck_seed.json
 
+Configuration
+
+-   Place the PCF on a model-driven form or custom page, then configure inputs:
+    -   EndpointMode: Flow
+    -   GetViewModelEndpoint: Flow A URL (HTTP POST) per docs/FLOWS.md
+    -   UpdateLastRunEndpoint: Flow B URL (HTTP POST) per docs/FLOWS.md
+    -   ShowSettings: Yes/No as desired
+    -   SettingsNavigationTarget: entityLogicalName[:formId] or full URL (defaults to new_healthchecksettings if omitted)
+    -   TitleText, DescriptionText, RunButtonText, LastRunTextTemplate: optional overrides
+
 Test Cases
 
 1. Load control
