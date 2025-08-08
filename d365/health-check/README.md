@@ -13,6 +13,9 @@ Contents
 - ./solution/ — Dataverse solution structure and deployment steps
 - ./schema/ — Dataverse table design and sample seed data
 - ./docs/FLOWS.md — Power Automate flows to replace Apex calls
+- ./docs/DEPLOY.md — Deployment guide for adding the solution to a Dataverse environment
+- ./solution/README.md — Solution packaging (pack/unpack) and environment setup
+
 
 - ./docs/ — Architecture and testing guides
 

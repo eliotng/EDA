@@ -68,3 +68,6 @@ Accessibility
 
 -   Keyboard access for Run button and list navigation
 -   Contrast and status annunciation for pass/fail state
+    Deployment
+
+-   See ../docs/DEPLOY.md for environment setup, adding the PCF to a form or custom page, and configuring Flow endpoints.

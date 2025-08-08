@@ -41,3 +41,13 @@ Rendering Notes
 Navigation
 - For Model-driven: use Xrm.Navigation.openForm/openUrl based on SettingsNavigationTarget
 - For Canvas: expose a property to allow parent app to navigate
+Build & Configure
+- Install: yarn install
+- Build: yarn build
+- Add the control to a model-driven form or custom page and set inputs:
+  - EndpointMode: Flow
+  - GetViewModelEndpoint: Flow A URL
+  - UpdateLastRunEndpoint: Flow B URL
+  - ShowSettings: true/false
+  - SettingsNavigationTarget: entityLogicalName[:formId] or full URL
+- See ../docs/FLOWS.md and ../docs/DEPLOY.md for backend and deployment steps.

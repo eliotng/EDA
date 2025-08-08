@@ -26,3 +26,6 @@ CI
 
 -   If CI is enabled for this repo, ensure added files do not break existing linting
 -   Keep changes isolated under /d365 to avoid interfering with Salesforce code
+    Deployment
+
+-   After local validation, follow docs/DEPLOY.md to import components into a Dataverse environment and configure the PCF inputs.
